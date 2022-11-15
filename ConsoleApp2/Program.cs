@@ -1,17 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8; //viét tiếng việt có dấu
+
+            //in tên
+            Console.WriteLine("nhập tên của bạn;");
             string Name = Console.ReadLine();
-            Console.WriteLine(" tooi ten la :" + "" + Name);
+            Console.WriteLine(" tôi tên là  :" + "" + Name);
+
+            //in số tuỏi
+            Console.WriteLine("nhập số tuổi của bạn!");
+            string Age = Console.ReadLine();
+            Console.WriteLine("năm nay tôi  :" + "" + Age + "tuoi.");
             Console.ReadKey();
         }
     }
